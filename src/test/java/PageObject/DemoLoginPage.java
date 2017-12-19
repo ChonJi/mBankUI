@@ -1,8 +1,8 @@
 package PageObject;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 
 public class DemoLoginPage {
@@ -10,7 +10,7 @@ public class DemoLoginPage {
     SelenideElement loginButton = $("input[value='Zaloguj się']");
 
     public DemoPage logIntoDemoPage() {
-        loginButton.shouldBe(Condition.visible).click();
+        loginButton.shouldBe(visible).click();
         return new DemoPage();
     }
 }
