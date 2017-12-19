@@ -9,6 +9,10 @@ public class DemoLoginPage {
 
     SelenideElement loginButton = $("input[value='Zaloguj się']");
 
+    /**
+     * Clicks on Login Button on Demo Login Page
+     * @return DemoPage
+     */
     public DemoPage logIntoDemoPage() {
         loginButton.shouldBe(visible).click();
         return new DemoPage();

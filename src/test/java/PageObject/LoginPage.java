@@ -10,6 +10,10 @@ public class LoginPage {
 
     SelenideElement demoButton = $("a[href='http://www.nowedemo.mbank.pl/login.html']");
 
+    /**
+     * Clicks on Demo Page Link
+     * @return DemoLoginPage
+     */
     public DemoLoginPage shouldClickOnDemoLink() {
         demoButton.shouldBe(visible).click();
         switchTo().window(1);

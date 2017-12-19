@@ -11,6 +11,10 @@ import static org.testng.AssertJUnit.assertEquals;
  */
 public class SetUp {
 
+    /**
+     * Opens mBank Home Page
+     * @return HomePage
+     */
     public HomePage openHomePage() {
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         System.setProperty("selenide.browser", "Chrome");
