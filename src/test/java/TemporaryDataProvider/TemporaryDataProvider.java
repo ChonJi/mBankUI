@@ -11,6 +11,4 @@ public class TemporaryDataProvider {
     public static String demoPageHeaderText = "Witamy w wersji demonstracyjnej serwisu transakcyjnego mBanku.";
     public static List<String> expectedHelpProposalsHeaders = asList("Samouczków,", "Filmów wideo,", "Eksperta online,");
     public static List<String> expectedFirstMenuDescriptions = asList("Oferta indywidualna", "Private banking", "Oferta dla firm", "MSP i korporacje");
-
-
 }

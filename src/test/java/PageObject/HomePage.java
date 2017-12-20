@@ -12,7 +12,7 @@ import static com.codeborne.selenide.WebDriverRunner.url;
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.testng.AssertJUnit.assertEquals;
 
-public class HomePage extends SetUp {
+public class HomePage {
 
     private SelenideElement loginButton = $x("//*[@id='log-in']/a[1]");
 
@@ -55,8 +55,8 @@ public class HomePage extends SetUp {
      * Checks are all first line menu elements clickable
      */
     public void areFirstMenuElementsClickable() {
-        for (int i = 1; i < firstMenuElements.size(); i++ ) {
-            elementToBeClickable(firstMenuElements.get(i - 1));
+        for (int i = 0; i < firstMenuElements.size(); i++ ) {
+            elementToBeClickable(firstMenuElements.get(i));
         }
     }
 
@@ -64,7 +64,7 @@ public class HomePage extends SetUp {
      * Checks if page reacts on clicking on menu elements and redirects to correct url's
      */
     public void checkIfPageChangesByClickingOnFirstMenuElements() {
-        for (int i = 3; i > 0; i-- ) {
+        for (int i = 3; i >= 0; i-- ) {
             firstMenuElements.get(i).click();
             assertEquals(url(), baseUrl + expectedUrlFromFirstMenu.get(i));
         }
