@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.switchTo;
 
 public class LoginPage {
 
-    SelenideElement demoButton = $("a[href='http://www.nowedemo.mbank.pl/login.html']");
+    private SelenideElement demoButton = $("a[href='http://www.nowedemo.mbank.pl/login.html']");
 
     /**
      * Clicks on Demo Page Link

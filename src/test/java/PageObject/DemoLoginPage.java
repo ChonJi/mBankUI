@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class DemoLoginPage {
 
-    SelenideElement loginButton = $("input[value='Zaloguj się']");
+    private SelenideElement loginButton = $("input[value='Zaloguj się']");
 
     /**
      * Clicks on Login Button on Demo Login Page

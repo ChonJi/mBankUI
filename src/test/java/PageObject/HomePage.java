@@ -15,9 +15,7 @@ import static org.testng.AssertJUnit.assertEquals;
 public class HomePage {
 
     private SelenideElement loginButton = $x("//*[@id='log-in']/a[1]");
-
     private SelenideElement logo = $("img[alt='mBank']");
-
     private ElementsCollection firstMenuElements = $$("a[class='menu-item-href']");
 
     /**
